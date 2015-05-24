@@ -10,9 +10,8 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu utopic main universe" > /etc/apt/
     apt-get -y install nginx \
     curl \
     wget \
-    supervisor
-
-RUN apt-get clean && \
+    supervisor && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
