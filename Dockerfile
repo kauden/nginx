@@ -6,7 +6,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu utopic main universe" > /etc/apt/sources.list && \
     apt-get update && \
-    apt-get -y upgrade && \
     apt-get -y install nginx \
     curl \
     wget \
